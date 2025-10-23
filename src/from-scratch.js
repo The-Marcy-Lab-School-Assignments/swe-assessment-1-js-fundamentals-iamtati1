@@ -12,18 +12,45 @@
 // ============================================
 // Question 1: petJudger
 // ============================================
-
 const petJudger = (petBreed, petName) => {
-  // Your code here
+  // check if one or both arguments are missing
+  if (!petBreed || !petName) {
+    console.log("Missing information. Please provide a valid pet.");
+  } else if (petBreed === 'dog') {
+    console.log(`I love dogs! ${petName} is so cute!`);
+  } else if (petBreed === 'cat') {
+    console.log(`I love cats! ${petName} is so cute!`);
+  } else if (petBreed === 'turtle') {
+    console.log(`Who doesn't love a good turtle? ${petName} is the tops.`);
+  } else if (petBreed === 'snake') {
+    console.log(`Not a fan, please take ${petName} and leave.`);
+  } else {
+    console.log("What an...interesting pet.");
+  }
 };
+
+petJudger('dog', 'lima');
+petJudger('cat', 'brady');
+petJudger('panda');
 
 // ============================================
 // Question 2: loopFromOneUpToAnother
 // ============================================
 
 const loopFromOneUpToAnother = (firstNum, secondNum) => {
-  // Your code here
+
+  if (firstNum >= secondNum) {
+    return;
+  }
+  for (let i = firstNum; i < secondNum; i++) {
+    console.log(i);
+  }
 };
+
+loopFromOneUpToAnother(4, 5);
+loopFromOneUpToAnother(2, 9);
+loopFromOneUpToAnother(1, 1);
+loopFromOneUpToAnother(5, 1);
 
 // ============================================
 // Question 3: shoutEveryLetterForLoop

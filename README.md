@@ -299,7 +299,7 @@ In a few paragraphs, give a brief lesson on the topic of **rest parameters** (lo
 In your lesson, be sure to cover the following:
 
 * What is the purpose of "rest parameters"?  
-* How do we turn a parameter into a rest parameter and use them in functions? 
+* How debug
 * Illustrate the use of rest parameters by writing a function called `sum` that takes *any* number of integers as arguments and returns their sum.
 
 ```javascript

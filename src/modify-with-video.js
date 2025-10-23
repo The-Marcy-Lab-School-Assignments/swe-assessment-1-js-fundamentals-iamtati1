@@ -20,9 +20,8 @@
   - The bugs you found (what's wrong and why)
   - The fixes you implemented
 
-  ADD YOUR LOOM LINK HERE: __________
+  ADD YOUR LOOM LINK HERE: https://www.loom.com/share/646b4e5a15c14e4e92667d4ab499c950?sid=bdbd9671-2306-4215-be16-756b1a8c8268
 */
-
 const players = [
   { name: 'Taylor', score: 0 },
   { name: 'Jordan', score: 0 },
@@ -32,8 +31,9 @@ const players = [
 
 const increaseScore = (name) => {
   for (let i = 0; i <= players.length; i++) {
-    if (players[i].name = name) {
+    if (players[i].name === name) {
       players[i].score += 1;
+      return players[i];
     }
   }
 }
@@ -42,6 +42,7 @@ const decreaseScore = (name) => {
   for (let i = 0; i < players.length; i++) {
     if (players[i].name === name) {
       players[i].score -= 1;
+      return players[i];
     }
   }
 }
@@ -54,7 +55,7 @@ const resetAllScores = () => {
 }
 
 const resetSingleScore = (player) => {
-  score = 0;
+  player.score = 0;
 }
 
 const getTopScorer = () => {
