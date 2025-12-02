@@ -49,7 +49,7 @@ const decreaseScore = (name) => {
 
 const resetAllScores = () => {
   for (let i = 0; i < players.length; i++) {
-    let player = players[i];
+    const player = players[i];
     resetSingleScore(player);
   }
 }

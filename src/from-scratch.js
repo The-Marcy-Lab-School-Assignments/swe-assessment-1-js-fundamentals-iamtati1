@@ -15,7 +15,7 @@
 const petJudger = (petBreed, petName) => {
   // check if one or both arguments are missing
   if (!petBreed || !petName) {
-    console.log("Missing information. Please provide a valid pet.");
+    console.log('Missing information. Please provide a valid pet.');
   } else if (petBreed === 'dog') {
     console.log(`I love dogs! ${petName} is so cute!`);
   } else if (petBreed === 'cat') {
@@ -25,13 +25,13 @@ const petJudger = (petBreed, petName) => {
   } else if (petBreed === 'snake') {
     console.log(`Not a fan, please take ${petName} and leave.`);
   } else {
-    console.log("What an...interesting pet.");
+    console.log('What an...interesting pet.');
   }
 };
 
-petJudger('dog', 'lima');
-petJudger('cat', 'brady');
-petJudger('panda');
+petJudger('dog', 'frida'); // Prints "I love dogs! frida is so cute!"
+petJudger('panda', 'joe'); // Prints "What an...interesting pet."
+petJudger('panda'); // Prints "Missing information. Please provide a valid pet."
 
 // ============================================
 // Question 2: loopFromOneUpToAnother
@@ -47,26 +47,47 @@ const loopFromOneUpToAnother = (firstNum, secondNum) => {
   }
 };
 
-loopFromOneUpToAnother(4, 5);
-loopFromOneUpToAnother(2, 9);
-loopFromOneUpToAnother(1, 1);
-loopFromOneUpToAnother(5, 1);
+loopFromOneUpToAnother(1, 5); // Prints on separate lines 1 2 3 4
+loopFromOneUpToAnother(5, 10); // Prints on separate lines 5 6 7 8 9
+loopFromOneUpToAnother(1, 1); // Prints nothing
+loopFromOneUpToAnother(5, 1); // Prints nothing
 
 // ============================================
 // Question 3: shoutEveryLetterForLoop
 // ============================================
 
 const shoutEveryLetterForLoop = (str) => {
-  // Your code here
+  let arr;
+  const newArray = [];
+  for (let i = 0; i < str.length; i++) {
+    newArray.push(arr[i])
+
+  };
+  return str[i];
 };
+/* Correct Examples: */
+shoutEveryLetterForLoop('hey');
+// H!
+// E!
+// Y!
+
+shoutEveryLetterForLoop('');
+
+/* Incorrect Examples: */
+shoutEveryLetterForLoop('hey');
+// HEY!
+
+shoutEveryLetterForLoop('hey');
+// H!E!Y!
 
 // ============================================
 // Question 4: letterCaseCounts
 // ============================================
 
-const letterCaseCounts = (str) => {
-  // Your code here
-};
+function letterCaseCounts(str) {
+  if (Character.nums === isLower(str, []))
+    return [] += 1;
+}
 
 // ============================================
 // Question 5: getNamesOfGreedyGnomes

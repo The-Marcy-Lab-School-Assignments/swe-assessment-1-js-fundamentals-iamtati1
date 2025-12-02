@@ -22,8 +22,8 @@ const fixVariables = (temp) => {
     msg = 'On the hot side.';
   } else {
     msg = 'I will die of heat.';
-  };
-  console.log(msg); //msg
+  }
+  console.log(msg);// msg
   console.log("And that's how I feel about the temp!");
 
   return msg;
@@ -36,13 +36,13 @@ const fixVariables = (temp) => {
 // It should NOT mutate the original array
 
 const doubleAllItemsPurely = (arr) => {
-  let newArray = [];
+  const newArray = [];
   for (let i = 0; i < arr.length; i++) {
     newArray.push(arr[i] * 2);
   }
   return newArray;
 };
-console.log(doubleAllItemsPurely[1, 2, 3]);
+console.log(doubleAllItemsPurely[123]);
 
 // ============================================
 // Question 3: sumArray
