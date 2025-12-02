@@ -12,17 +12,20 @@
 // This function should print and return a message based on temperature
 
 const fixVariables = (temp) => {
+  let msg;
+
   if (temp < 30) {
-    const msg = 'Pretty chilly.';
+    msg = 'Pretty chilly.';
   } else if (temp < 70) {
-    const msg = 'Not bad.';
+    msg = 'Not bad.';
   } else if (temp < 100) {
-    const msg = 'On the hot side.';
+    msg = 'On the hot side.';
   } else {
-    const msg = 'I will die of heat.';
+    msg = 'I will die of heat.';
   }
-  console.log(msg);
+  console.log(msg);// msg
   console.log("And that's how I feel about the temp!");
+
   return msg;
 };
 
@@ -33,11 +36,13 @@ const fixVariables = (temp) => {
 // It should NOT mutate the original array
 
 const doubleAllItemsPurely = (arr) => {
+  const newArray = [];
   for (let i = 0; i < arr.length; i++) {
-    arr[i] = arr[i] * 2;
+    newArray.push(arr[i] * 2);
   }
-  return arr;
+  return newArray;
 };
+console.log(doubleAllItemsPurely[123]);
 
 // ============================================
 // Question 3: sumArray
@@ -46,11 +51,12 @@ const doubleAllItemsPurely = (arr) => {
 
 const sumArray = (nums) => {
   let sum = 0;
-  for (let i = 1; i < nums; i++) {
+  for (let i = 0; i < nums.length; i++) {
     sum += nums[i];
   }
   return sum;
 };
+console.log(sumArray([1, 2, 3, 4, 5, 6, 7, 8]));
 
 // ============================================
 // Exports
